@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'chetan-badhe-angular-apm'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_f295ce0f141d434ba0cb3712ff9b6a65 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e032e9d7c7dc47eeb807ed365215bcc9 }}
         package: .

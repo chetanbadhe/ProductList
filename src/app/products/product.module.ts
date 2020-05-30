@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ProductListComponent } from './product-list.component';
 import { ProductDetailComponent } from './product-detail.component';
 import { ConvertToSpacesPipe } from '../shared/convert-to-spaces.pipe';
@@ -18,10 +18,10 @@ import { SharedModule } from '../shared/shared.module';
       {
         path: 'products/:id',
         canActivate: [ProductDetailGuard],
-        component: ProductDetailComponent
-      }
+        component: ProductDetailComponent,
+      },
     ]),
-    SharedModule
-  ]
+    SharedModule,
+  ],
 })
-export class ProductModule { }
+export class ProductModule {}
